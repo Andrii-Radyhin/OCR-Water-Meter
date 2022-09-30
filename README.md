@@ -63,5 +63,11 @@ Before start to describe steps we need 3 files: water_meter.h5, model_final.pth,
 6) Use model_final.pth and repeate steps to extract predicitions
 
 
+Task 1.zip contains notebooks for:
 
+Seg_train.ipynb for training segmentation model (part 1)
+
+Colab_links.txt links for part 2 and 3
+
+predictions.py shows predictions in a console.
 
