@@ -69,5 +69,5 @@ Seg_train.ipynb for training segmentation model (part 1)
 
 Colab_links.txt links for part 2 and 3
 
-predictions.py shows predictions in a console.
+predictions.py shows predictions for a single image in a console.
 
