@@ -40,7 +40,7 @@ After using bitwise opencv operation on images with help of the masks, we need t
 
 After rotating:
 
-![alt text](images/rotated id_16_value_106_749.jpg)
+![alt text](https://github.com/Andrii-Radyhin/Intenship-Description-Task-1/blob/62c198c9ac50d595c2c81d9cca8e47d0197db608/images/rotated%20id_16_value_106_749.jpg)
 
 Our objective is to input cropped photos into our OCR model utilizing the segmentation model's generated masks and associated images. Then, using the 200-meter sample of manually labeled images, we will train a Faster RCNN model. Our objective is to create a Faster RCNN model that can identify meters' digits with accuracy and forecast their values. We will parse the data and reformat the predictions using the output data from such a model on test photos so that the predictions appear in order from left to right. The digits will then be properly combined to get the final meter reading
 
