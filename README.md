@@ -1,7 +1,7 @@
 # Intenship-Description-Task-1
 As task not contain dataset, i suggest to use kaggle [water meter dataset.](https://www.kaggle.com/datasets/tapakah68/yandextoloka-water-meters-dataset)
 
-## OCR task cosists from 3 steps:
+## OCR task consists of 3 steps:
 1) Semantic segmentation model to allocate the numbers of the water meter and then crop it.
 2) OCR model to predict exact numbers on the cropped image.
 3) Combine it together.
