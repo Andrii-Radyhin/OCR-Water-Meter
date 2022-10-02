@@ -27,9 +27,7 @@ Now splititing dataset into validation and training parts and we are ready to tr
 | ------ | ------ | ------ | ------ | ------ |
 | UNet & EfficientNetB0 | 0.6283 | (256x256)  | 50 | 200 |
 
-![alt text](images/Example_1.PNG)
-
-![alt text](images/Example_1.PNG)
+![alt text](images/results.PNG)
 
 
 ## Preparing dataset for OCR model
@@ -38,11 +36,11 @@ Before starting cropping dataset, should to say, i will use masks from dataset, 
 
 After using bitwise opencv operation on images with help of the masks, we need to care about rotation of the new cropped image:
 
-![alt text](images/Example_1.PNG)
+![alt text](images/id_16_value_106_749.jpg)
 
 After rotating:
 
-![alt text](images/Example_1.PNG)
+![alt text](images/rotated id_16_value_106_749.jpg)
 
 Our objective is to input cropped photos into our OCR model utilizing the segmentation model's generated masks and associated images. Then, using the 200-meter sample of manually labeled images, we will train a Faster RCNN model. Our objective is to create a Faster RCNN model that can identify meters' digits with accuracy and forecast their values. We will parse the data and reformat the predictions using the output data from such a model on test photos so that the predictions appear in order from left to right. The digits will then be properly combined to get the final meter reading
 
@@ -50,13 +48,13 @@ Already created and ready for ocr model dataset can be downloaded via link: [**d
 
 ### Examples:
 
-![alt text](images/Example_1.PNG)
+![alt text](images/examples.PNG)
 
-Our photos are split and labeled with the appropriate label for each digit, as shown above. Dataset is divided into training (70%), validation (20%), and testing (10%) datasets, to train a special Detectron2 Faster RCNN model, according to https://towardsdatascience.com/how-to-train-detectron2-on-custom-object-detection-data-be9d1c233e4
+Our photos are split and labeled with the appropriate label for each digit, as shown above. Dataset is divided into training (70%), validation (20%), and testing (10%) datasets, to train a special Detectron2 Faster RCNN model, according to [article](https://towardsdatascience.com/how-to-train-detectron2-on-custom-object-detection-data-be9d1c233e4)
 
 To specify, should to say, we will use  faster_rcnn_X_101_32x8d_FPN, but Detectron2 allows you many options in determining your model architecture, which you can see in the [Detectron2 model zoo](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md)
 
-![alt text](images/Example_1.PNG)
+![alt text](images/0_4epeFqOWmeelbuv_.png)
 
 After trainig there is a raw output, here are steps to extract predicitions:
 1) Read image and get output information. 
