@@ -82,7 +82,7 @@ Before start to describe steps we need 3 files: water_meter.h5, model_final.pth,
 
  Example:
 
- ![alt text](images/0_4epeFqOWmeelbuv_.png)
+ ![alt text](images/testimg.PNG)
 
 Task 1.zip contains notebooks for:
 
