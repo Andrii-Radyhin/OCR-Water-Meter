@@ -1,7 +1,7 @@
 # Intenship-Description-Task-1
 As task not contain dataset, i suggest to use kaggle [water meter dataset.](https://www.kaggle.com/datasets/tapakah68/yandextoloka-water-meters-dataset)
 
-P.S. Because of not simple install (and by reason of saving time to check all solutions) of some [packages](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) there is no .py files. Programm can be tested step by step with notebooks. .zip archive conatins requirements.txt, but pipreqs can not detect detectron2 and it's may not work with pip also.
+P.S. Because of not simple install (and by reason of saving time to check all solutions) of some [packages](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) there is no .py files. Programm can be tested step by step with notebooks. .zip archive contains requirements.txt, but pipreqs can not detect detectron2 and it's may not work with pip also.
 
 ## OCR task consists of 3 steps:
 1) Semantic segmentation model to allocate the numbers of the water meter and then crop it.
