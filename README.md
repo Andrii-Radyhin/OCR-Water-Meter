@@ -78,6 +78,11 @@ Before start to describe steps we need 3 files: water_meter.h5, model_final.pth,
 5) Cropping using bitwise operation.
 6) Use model_final.pth and repeate steps to extract predicitions
 
+## OCR Results
+
+ Example:
+
+ ![alt text](images/0_4epeFqOWmeelbuv_.png)
 
 Task 1.zip contains notebooks for:
 
